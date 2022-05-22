@@ -22,6 +22,3 @@ if __name__ == '__main__':
         n += 1
 
     print(f"Si({x}) = {x + S}")
-© 2022 GitHub, Inc.
-Terms
-Privacy

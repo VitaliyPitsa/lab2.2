@@ -1,27 +1,14 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# В-8. Задание №8.Найти интегральный гиперболический синус.
 
 import math
 import sys
 
-EPS = 10 ** -10
-
 if __name__ == '__main__':
-    x = float(input("add value for x: "))
-    if x == 0:
-        print("Illegal value of x", file=sys.stderr)
-        exit(1)
 
-    a = x ** 3 / 18
-    S, n = a, 1
-
-    while math.fabs(a) > EPS:
-        a *= (x ** 2 * n) / (2 * (n + 1)) ** 2 * x
-        S += a
-        n += 1
-
-    print(f"Si({x}) = {x + S}")
-© 2022 GitHub, Inc.
-Terms
-Privacy
+   for i in range(105, 999, 7):
+     i1 = i % 10
+     i2 = (i // 10) % 10
+     i3 = (i // 100) % 10
+   if (i1 + i2 + i3) % 7 == 0:
+    print(i)

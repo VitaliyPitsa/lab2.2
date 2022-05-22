@@ -15,4 +15,3 @@ if __name__ == '__main__':
         print(b)
     else :
         print(c)
-        exit(1)
