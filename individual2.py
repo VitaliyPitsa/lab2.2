@@ -1,17 +1,16 @@
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+import math
 import sys
 
 if __name__ == '__main__':
-    print("введите 3 числа")
 
-    a = int(input('a = '))
-    b = int(input('b = '))
-    c = int(input('c = '))
-    print ("наибольшее число ")
-    if a >= b and a >= c:
-        print(a)
-    elif b >= c and b >= a:
-        print(b)
-    else :
-        print(c)
+   for i in range(105, 999, 7):
+     i1 = i % 10
+     i2 = (i // 10) % 10
+     i3 = (i // 100) % 10
+   if (i1 + i2 + i3) % 7 == 0:
+    print(i)
+
+
